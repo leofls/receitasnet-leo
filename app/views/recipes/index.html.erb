@@ -1,7 +1,11 @@
 <h1>Reveitas</h1>
 <ul>
     <% @recipes.each do |recipe| %>
-    <li><%=recipe%></li>
+    <li>
+        <%=recipe.name%>
+        <%=recipe.stuff%>
+        <%=recipe.calories%>
+    </li>
     <%end%>
 </ul>
 
