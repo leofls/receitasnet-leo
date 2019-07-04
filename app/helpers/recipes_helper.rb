@@ -7,5 +7,13 @@ module RecipesHelper
             recipe.calories
         end
     end
+
+    def imagem(recipe)
+        if recipe.poster.blank?
+            image_tag('produto-sem-imagem.jpg')
+        else
+            image_tag(recipe.poster)
+        end
+    end
 end
     
